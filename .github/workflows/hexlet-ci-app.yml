@@ -12,7 +12,7 @@ jobs:
       # Продолжаем setup
       - run: npm run build
       # Запускаем линтер
-      - run: npm run lint
+      - run: npx eslint
       # Запускаем тесты
       - name: run tests
         run: npm test # name и run относятся к одной задаче, поэтому дефис ставится только перед name
